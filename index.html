@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Send Email</h1>
+
+    <label for="sendername">Sender Name :</label>
+    <input type="text" id="sendername"> <br>
+
+    <label for="to">To (Email) :</label>
+    <input type="text" id="to"> <br>
+
+    <label for="subject">Subject :</label>
+    <input type="text" id="subject"> <br>
+
+    <label for="replyto">Reply To (Email) :</label>
+    <input type="text" id="replyto"> <br>
+
+    <label for="message">Message :</label>
+    <textarea cols="30" rows="10" id="message"></textarea> <br>
+
+    <button onclick="sendMail()">Send</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
